@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tcpclientside.ClientGController">
+   <children>
+      <Pane prefHeight="48.0" prefWidth="600.0" style="-fx-background-color: #4F6367;">
+         <children>
+            <Text fill="WHITE" layoutX="28.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client" wrappingWidth="96.375">
+               <font>
+                  <Font name="Centaur" size="36.0" />
+               </font>
+            </Text>
+            <JFXButton buttonType="RAISED" layoutX="531.0" layoutY="12.0" onAction="#send" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: GREEN; -fx-background-radius: 20; -fx-border-radius: 20;" text="Send" />
+         </children>
+      </Pane>
+      <Pane layoutX="360.0" layoutY="93.0" prefHeight="110.0" prefWidth="210.0" style="-fx-background-color: #FE5F55;" />
+      <TextArea fx:id="msgSent" editable="false" layoutX="365.0" layoutY="98.0" prefHeight="100.0" prefWidth="200.0" />
+      <JFXTextField focusColor="#ffffff00" layoutX="29.0" layoutY="108.0" prefHeight="25.0" prefWidth="82.0" text="Port number : " unFocusColor="#fe5f55" />
+      <Pane layoutX="360.0" layoutY="262.0" prefHeight="110.0" prefWidth="210.0" style="-fx-background-color: #FE5F55;" />
+      <TextArea fx:id="msgRec" editable="false" layoutX="365.0" layoutY="267.0" prefHeight="100.0" prefWidth="200.0" />
+      <JFXTextField focusColor="#ffffff00" layoutX="29.0" layoutY="145.0" prefHeight="25.0" prefWidth="82.0" text="IP address : " unFocusColor="#fe5f55" />
+      <TextField fx:id="portNumber" layoutX="119.0" layoutY="114.0" />
+      <TextField fx:id="ipAdd" layoutX="119.0" layoutY="146.0" />
+      <Text layoutX="29.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connect to :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="365.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message Sent">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="365.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message Received">
+         <font>
+            <Font name="Centaur" size="18.0" />
+         </font>
+      </Text>
+      <JFXTextField focusColor="#ffffff00" layoutX="29.0" layoutY="292.0" prefHeight="25.0" prefWidth="118.0" text="MessageToSend" unFocusColor="#fe5f55" />
+      <TextField fx:id="msg" layoutX="166.0" layoutY="292.0" />
+   </children>
+</AnchorPane>
